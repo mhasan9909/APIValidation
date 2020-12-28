@@ -32,15 +32,16 @@ public class Rest_Ass_API {
 		  @Test
 		  public void postApi() {
 			  
-			  File inPut=new File("/Users/mdhasan/eclipse-workspace/LearnSel/dataEntry.json");
-			  Response postIt=given().contentType(ContentType.JSON).body(inPut).post("https://reqres.in/api/users");
+			  File inPut=new File("/Users/mdhasan/eclipse-workspace/API_Testing/dataEntry.json");
+			  Response postIt=given().contentType(ContentType.JSON).body(inPut).post("http://dummy.restapiexample.com/api/v1/create\n"
+			  		+ "");
 			  postIt.prettyPrint();
 			  System.out.println(postIt.getStatusCode());
 			  System.out.println(postIt.getTime());
 			  
 			  //to validate
 			  int validPstatus=postIt.getStatusCode();
-			  Assert.assertEquals(validPstatus,201);
+			  Assert.assertEquals(validPstatus,200);
 	  
   }
 }

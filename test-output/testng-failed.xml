@@ -5,7 +5,7 @@
     <classes>
       <class name="restAssApi.Rest_Ass_API">
         <methods>
-          <include name="getApi"/>
+          <include name="postApi"/>
         </methods>
       </class> <!-- restAssApi.Rest_Ass_API -->
     </classes>
